@@ -1,9 +1,9 @@
 {
-  "name": "atom-espresso-soda-theme",
+  "name": "Atom Espresso Soda Theme",
   "theme": "syntax",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
-  "description": "Converted from the TextMate and Sublime Theme using the TextMate bundle converter.",
+  "description": "Converted from the TextMate and Sublime Text Theme using the TextMate bundle converter.",
   "repository": "https://github.com/atom/atom-espresso-soda-theme",
   "license": "MIT",
   "engines": {
