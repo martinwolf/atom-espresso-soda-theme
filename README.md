@@ -1,4 +1,4 @@
-Espresso Soda based Atom Syntax Theme
+Espresso Soda Syntax Theme for Atom
 ==============================
 
-Atom.io Syntax Theme based on the Espesso Soda Sublime Text Theme.
+Converted from the TextMate and Sublime Theme using the [TextMate bundle converter](http://atom.io/docs/latest/converting-a-text-mate-theme).
