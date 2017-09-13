@@ -3,14 +3,13 @@ atom-text-editor {
     color: #000000;
 }
 
-.invisible
-.invisible-character {
-    color: #cccccc;
-}
-
 .indent-guide {
     box-shadow: inset 1px 0 #e8e8e8;
-    color: #E0E0E0;
+    color: #f1f1f1;
+}
+
+.syntax--source .invisible-character.eol {
+    color: #f1f1f1;
 }
 
 .wrap-guide {
@@ -79,7 +78,14 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 .syntax--variable .syntax--punctuation {
     color: #4C8FC7;
 }
-
+.syntax--begin.syntax--php.syntax--embedded,
+.syntax--end.syntax--php.syntax--embedded,
+.syntax--end.syntax--php.syntax--embedded > .syntax--source,
+.syntax--meta.syntax--tag .syntax--punctuation.syntax--begin.syntax--php.syntax--embedded,
+.syntax--meta.syntax--tag .syntax--punctuation.syntax--end.syntax--php.syntax--embedded, {
+    color: red;
+    font-weight: 600;
+}
 .syntax--entity.syntax--name.syntax--function,
 .syntax--support.syntax--function,
 .syntax--entity {
