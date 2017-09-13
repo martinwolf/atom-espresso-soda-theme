@@ -5,10 +5,20 @@ atom-text-editor {
 
 .indent-guide {
     box-shadow: inset 1px 0 #e8e8e8;
+    color: #f1f1f1;
+}
+
+.syntax--source .invisible-character.eol {
+    color: #f1f1f1;
+}
+
+.wrap-guide {
+    background-color: @syntax-wrap-guide-color;
 }
 
 atom-text-editor.is-focused .cursor {
-    border-color: red;
+    border-color: #626FC9;
+    border-width: 2px
 }
 
 .selection .region {
@@ -68,11 +78,39 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 .syntax--variable .syntax--punctuation {
     color: #4C8FC7;
 }
-
+.syntax--begin.syntax--php.syntax--embedded,
+.syntax--end.syntax--php.syntax--embedded,
+.syntax--end.syntax--php.syntax--embedded > .syntax--source,
+.syntax--meta.syntax--tag .syntax--punctuation.syntax--begin.syntax--php.syntax--embedded,
+.syntax--meta.syntax--tag .syntax--punctuation.syntax--end.syntax--php.syntax--embedded, {
+    color: red;
+    font-weight: 600;
+}
 .syntax--entity.syntax--name.syntax--function,
 .syntax--support.syntax--function,
 .syntax--entity {
     color: #61862F;
+}
+
+.syntax--type.syntax--function + .syntax--function.syntax--name {
+    color: #7653C1;
+    background-color: #FBE9AD;
+    font-weight: 600;
+}
+
+.syntax--punctuation.syntax--definition.syntax--variable.syntax--php {
+    color: #7653C1;
+    font-weight: 600;
+}
+.syntax--support.syntax--class {
+    font-weight: 600;
+}
+.syntax--variable.syntax--php {
+    color: #61862F;
+}
+.syntax--variable.syntax--this.syntax--php {
+    color: #7653C1;
+    background-color: rgba(118, 83 ,193, .15);
 }
 
 .syntax--entity.syntax--name.syntax--type,
@@ -145,6 +183,11 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 .syntax--entity.syntax--other.syntax--attribute-name {
     color: #4F9FCF;
+}
+
+.bracket-matcher .region {
+    background-color: rgba(118, 83 ,193, .15);
+    border-bottom: none;
 }
 
 .syntax--meta.syntax--tag .syntax--string.syntax--quoted,
