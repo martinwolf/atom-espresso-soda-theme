@@ -10,7 +10,7 @@ atom-text-editor {
 
 .indent-guide {
     box-shadow: inset 1px 0 #e8e8e8;
-    color: @syntax-indent-guide-color;
+    color: #E0E0E0;
 }
 
 .wrap-guide {
@@ -84,6 +84,27 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 .syntax--support.syntax--function,
 .syntax--entity {
     color: #61862F;
+}
+
+.syntax--type.syntax--function + .syntax--function.syntax--name {
+    color: #7653C1;
+    background-color: #FBE9AD;
+    font-weight: 600;
+}
+
+.syntax--punctuation.syntax--definition.syntax--variable.syntax--php {
+    color: #7653C1;
+    font-weight: 600;
+}
+.syntax--support.syntax--class {
+    font-weight: 600;
+}
+.syntax--variable.syntax--php {
+    color: #61862F;
+}
+.syntax--variable.syntax--this.syntax--php {
+    color: #7653C1;
+    background-color: rgba(118, 83 ,193, .15);
 }
 
 .syntax--entity.syntax--name.syntax--type,
