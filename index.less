@@ -3,12 +3,23 @@ atom-text-editor {
     color: #000000;
 }
 
+.invisible
+.invisible-character {
+    color: #cccccc;
+}
+
 .indent-guide {
     box-shadow: inset 1px 0 #e8e8e8;
+    color: @syntax-indent-guide-color;
+}
+
+.wrap-guide {
+    background-color: @syntax-wrap-guide-color;
 }
 
 atom-text-editor.is-focused .cursor {
-    border-color: red;
+    border-color: #626FC9;
+    border-width: 2px
 }
 
 .selection .region {
